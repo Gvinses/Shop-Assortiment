@@ -178,7 +178,7 @@ a{
     transition: 0.4s;
     border: 20px solid rgba(255, 255, 255, 0);
 }
-#Telegram:hover,#GitHub:hover{
+#discord:hover,#GitHub:hover{
     text-decoration: underline overline;
     color: rgb(199, 199, 199);
     transition: 0.4s;
