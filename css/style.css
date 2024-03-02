@@ -1,0 +1,185 @@
+body{
+    background-color: #1a1a1a;
+    height: 225vh;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 22px;
+}
+#Gr{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 185px;
+}
+#Op{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 185px;
+}
+.Block_1, .Block_2, .Block_3{
+    padding: 13px;
+    margin: 13px; 
+    transition: 1s;
+    outline: 0px solid rgba(255, 255, 255, 0);
+    outline-offset: 0;
+}
+.Block_1:hover, .Block_2:hover, .Block_3:hover{
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.664);
+    transition: 1s;
+    outline: 1px solid white;
+    outline-offset: 25px;
+}
+.block_Picture_1, .block_Picture_2, .block_Picture_3{
+    display: inline-block;
+    width: 390px;
+    height: 390px;
+    background-color: palevioletred;
+}
+.tovarInfo{
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    padding: 13px;
+    margin-left: 13px;
+}
+.blockName_1, .blockName_2, .blockName_3{
+    font-family: "Inter", sans-serif;
+    font-size: 150px;
+    margin-top: -160px;
+    color: white;
+    font-weight: 100;
+}
+.blockInformation_1, .blockInformation_2, .blockInformation_3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-top: -150px;
+}
+.price_1, .price_2, .price_3{
+    background: palevioletred;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 14px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    transform: rotate(15deg);
+    margin-left: 585px;
+    margin-top: -270px;
+}
+.aboutus{
+    border-top: 1px solid white;
+    margin-top: 70px;
+    padding: 30px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+}
+.aboutOurPoducts{
+    display: flex;
+}
+.pictures{
+    width: 360px;
+    height: 360px;
+    background-color: slateblue;
+}
+#text_AboutOurProduct{
+    margin-left: 60px;
+    font-size: 50px;
+}
+.hid{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100px);
+    transition: all 1s;
+    transition-delay: 1.7s;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(-30px);
+    transition: all 1s;
+    transition-delay: 0.7s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+#decoration{
+    width: 55%;
+    height: 150px;
+    background-color: rgb(80, 65, 175);
+    display: flex;
+    margin-left: 500px;
+    margin-top: -180px;
+}
+.Best{
+    border-top: 1px solid white;
+    margin-top: 170px;
+    padding: 30px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+}
+.aboutOurBest{
+    display: flex;
+    float: right;
+}
+#text_AboutOurBest{
+    margin-right: 60px;
+    font-size: 50px;
+}
+#decoration2{
+    width: 55%;
+    height: 150px;
+    background-color: rgb(80, 65, 175);
+    margin-right: 500px;
+    margin-top: -150px; 
+    float: right;
+}
+#DopInfo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    display: flex;
+    padding: 30px;
+}
+#DopInfo2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    display: flex;
+    padding: 30px;
+}
+.contacts{
+    margin-top: 400px;
+    padding: 50px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+a{
+    color: white;
+}
+#discord,#GitHub{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    padding: 30px;
+    text-decoration: none;
+    transition: 0.4s;
+    border: 20px solid rgba(255, 255, 255, 0);
+}
+#Telegram:hover,#GitHub:hover{
+    text-decoration: underline overline;
+    color: rgb(199, 199, 199);
+    transition: 0.4s;
+}
