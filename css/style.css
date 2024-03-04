@@ -1,6 +1,6 @@
 body{
     background-color: #1a1a1a;
-    height: 225vh;
+    height: 215vh;
 }
 .logo{
     display: flex;
@@ -119,6 +119,7 @@ body{
     display: flex;
     margin-left: 500px;
     margin-top: -180px;
+    flex-shrink: 2;
 }
 .Best{
     border-top: 1px solid white;
@@ -131,6 +132,7 @@ body{
 .aboutOurBest{
     display: flex;
     float: right;
+    flex-shrink: 2;
 }
 #text_AboutOurBest{
     margin-right: 60px;
@@ -182,4 +184,44 @@ a{
     text-decoration: underline overline;
     color: rgb(199, 199, 199);
     transition: 0.4s;
+}
+.rotatingBlock{
+    margin-top: 400px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-shrink: 1;
+}
+.block1, .block2, .block3{
+    height: 500px;
+    width: 300px;
+    background-color: rgb(80, 65, 175);
+    border-radius: 15px;
+    box-shadow: 0px 20px 50px -10px rgba(80, 65, 175, 0.445);
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    transition: 1s cubic-bezier(0.25, 3.46, 1, 0.94);
+}
+.block1:hover, .block2:hover, .block3:hover{
+    transform: rotate(5deg);
+    box-shadow: 10px 30px 30px -0px rgba(58, 47, 129, 0.445);
+    transition: 1s;
+}
+.round{
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    display: flex;
+    margin: 30px;
+    background-color: #1a1a1a;
+    box-shadow: inset -10px -10px 10px 2px rgba(84, 18, 206, 0.342);
+}
+.rotatingBlock-Text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 60px;
+    margin-top: 330px;
+    margin-left: 70px;
+    transform: rotate(-90deg);
 }
