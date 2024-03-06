@@ -1,6 +1,11 @@
 body{
     background-color: #1a1a1a;
     height: 215vh;
+    
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .logo{
     display: flex;
@@ -186,13 +191,13 @@ a{
     transition: 0.4s;
 }
 .rotatingBlock{
-    margin-top: 400px;
-    height: 600px;
+    margin-top: 500px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    flex-shrink: 1;
+    flex-shrink: 2;
 }
 .block1, .block2, .block3{
     height: 500px;
@@ -224,4 +229,9 @@ a{
     margin-top: 330px;
     margin-left: 70px;
     transform: rotate(-90deg);
+}
+.rotated{
+    justify-content: center;
+    transform: rotate(45deg);
+    display: flex;
 }
