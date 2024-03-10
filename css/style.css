@@ -88,6 +88,8 @@ body{
 }
 .aboutOurPoducts{
     display: flex;
+    flex-shrink: 1;
+    margin-left: 110px;
 }
 .pictures{
     width: 360px;
@@ -95,7 +97,7 @@ body{
     background-color: slateblue;
 }
 #text_AboutOurProduct{
-    margin-left: 60px;
+    margin-left: 150px;
     font-size: 50px;
 }
 .hid{
@@ -137,7 +139,7 @@ body{
 .aboutOurBest{
     display: flex;
     float: right;
-    flex-shrink: 2;
+    flex-shrink: 1;
 }
 #text_AboutOurBest{
     margin-right: 60px;
@@ -206,7 +208,10 @@ a{
     border-radius: 15px;
     box-shadow: 0px 20px 50px -10px rgba(80, 65, 175, 0.445);
     border: 1px solid rgba(255, 255, 255, 0.432);
-    transition: 1s cubic-bezier(0.25, 3.46, 1, 0.94);
+    transition: 1s cubic-bezier(0.25, 3.46, 1, 0.81);
+
+    display: flex;
+    flex-shrink: 1;
 }
 .block1:hover, .block2:hover, .block3:hover{
     transform: rotate(5deg);
@@ -230,8 +235,39 @@ a{
     margin-left: 70px;
     transform: rotate(-90deg);
 }
-.rotated{
-    justify-content: center;
-    transform: rotate(45deg);
+.getNewTheaterAll{
+    margin-top: 50px;
     display: flex;
+    justify-content: center;
+}
+.getNewTheaters{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 330px;
+    margin-top: 80px;
+}
+#username,#email,#register{
+    background-color: rgb(80, 65, 175);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.7s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+#username:hover,#email:hover,#register:hover{
+    background-color: rgb(67, 55, 146);
+}
+#register:hover{
+    cursor: pointer;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+#getTheaters_Text{
+    margin-left: 10px;
 }
