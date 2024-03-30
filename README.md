@@ -1,5 +1,5 @@
 # Shop-Assortiment
-Easy website, which I use for leveling up my HTML, CSS and some JavaScript skills, because I am learning that languages right now. And it is my first repository on GitHub
+Easy website, which I use for leveling up my HTML, CSS and some JavaScript skills, because I am learning that languages right now. 
  1. I use HTML, CSS, JavaScript.
  2. It is adaptive website(useing @media).
  3. It is like a mockup to Online Shop, so no logic with SQL or Backend yet.
