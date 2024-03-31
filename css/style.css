@@ -1,3 +1,8 @@
+html{
+    scrollbar-color: #ffffff #000000;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
 body{
     background-color: #1a1a1a;
     height: 215vh;
@@ -49,7 +54,7 @@ body{
     background-color: palevioletred;
     transition: 1s;
 }
-.tovarInfo{
+.tovarInfo, .tovarInfo2, .tovarInfo3{
     display: inline-block;
     flex-direction: column;
     position: absolute;
@@ -263,6 +268,7 @@ a{
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     transition: 1s;
 }
 .getNewTheaters{
@@ -284,6 +290,7 @@ a{
     margin: 10px;
     border-radius: 10px;
     transition: 0.7s cubic-bezier(0.47, 0, 0.745, 0.715);
+    width: 60vw;
 }
 #username:hover,#email:hover,#register:hover{
     background-color: rgb(67, 55, 146);
@@ -298,6 +305,7 @@ a{
 #getTheaters_Text{
     margin-left: 10px;
 }
+
 
 @media (max-width: 1200px){
     .price_1, .price_2, .price_3{
@@ -340,7 +348,9 @@ a{
         padding-top: 100px;
     }
 }
-@media (max-width: 800px) {
+
+
+@media (max-width: 900px) {
     .block_Picture_1, .block_Picture_2, .block_Picture_3{
         opacity: 0;
         width: 0;
@@ -350,5 +360,22 @@ a{
         width: 0;
         height: 20vh;
         opacity: 0;
+    }
+    .Block_1:hover>.block_Picture_1, .Block_2:hover>.block_Picture_2, .Block_3:hover>.block_Picture_3{
+        opacity: 100;
+        width: 300px;
+        height: 300px;
+    }
+    .Block_1:hover .tovarInfo{
+        opacity: 0.1;
+        margin-left: 100px;
+    }
+    .Block_2:hover .tovarInfo2{
+        opacity: 0.1;
+        margin-left: 100px;
+    }
+    .Block_3:hover .tovarInfo3{
+        opacity: 0.1;
+        margin-left: 100px;
     }
 }
